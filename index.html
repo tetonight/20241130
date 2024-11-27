@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>テトナイト特典カードページ</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 動画と画像のサイズを統一 */
+    .gallery video, .gallery img {
+      max-width: 90%;
+      height: auto;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 <body>
   <div class="gallery">
     <img src="images/テトナ1.jpeg" alt="テトナ1">
     <img src="images/テトナ2.jpeg" alt="テトナ2">
+
+    <div class="spacer"></div>
+    
+    <!-- 動画プレイヤーを追加 -->
+    <video controls>
+      <source src="https://drive.google.com/uc?export=download&id=1unhNlGFKu0yC2UvZ5VY11uAQ1qJESBDD" type="video/mp4">
+      お使いのブラウザは動画タグに対応していません。
+    </video>
 
     <div class="spacer"></div>
 
@@ -19,15 +37,10 @@
     <img src="images/gust4.jpeg" alt="gust4">
     <img src="images/gust5.jpeg" alt="gust5">
     <img src="images/gust6.jpeg" alt="gust6">
-  </div>
 
-  <!-- 動画プレイヤーを追加 -->
-  <div style="text-align: center; margin-top: 30px;">
-    <h2>イベント動画</h2>
-    <video controls width="640" height="360">
-      <source src="https://drive.google.com/uc?export=download&id=1unhNlGFKu0yC2UvZ5VY11uAQ1qJESBDD" type="video/mp4">
-      お使いのブラウザは動画タグに対応していません。
-    </video>
+    <div class="spacer"></div>
+
+
   </div>
 </body>
 </html>
